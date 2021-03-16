@@ -1,0 +1,29 @@
+nav {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.inputSearch {
+  font-family: "Abel", sans-serif;
+  background-color: #ebebeb;
+  color: #116193;
+  border-radius: 25px;
+  border: none;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 850px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.inputSearch:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+@media only screen and (max-width: 990px) {
+  .inputSearch {
+    width: 85%;
+  }
+}

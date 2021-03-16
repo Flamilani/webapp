@@ -1,0 +1,104 @@
+section.cardMovie {
+  display: flex;
+  background-color: #ebebeb;
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0px;
+}
+
+.cardMovie article {
+  width: 100%;
+}
+
+.cardMovie figure {
+  margin: 0px;
+  margin-bottom: -5px;
+}
+
+.cardMovie img {
+  width: auto;
+  max-width: 230px;
+}
+
+.cardMovie .titleMovie {
+  background-color: #116193;
+  color: #00e8e4;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.cardMovie .percentage {
+  padding: 10px;
+  border: 4px solid #00e8e4;
+  border-radius: 40px;
+  background-color: #116193;
+  font-size: 22px;
+  position: relative;
+  top: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.cardMovie .dateMovie {
+  margin-left: 90px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.cardMovie .content {
+  margin: 20px;
+  font-size: 18px;
+}
+
+.cardMovie .divGenre {
+  margin-left: 20px;
+}
+
+.cardMovie .genre {
+  background-color: #fff;
+  border: 1px solid #116193;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  color: #116193;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 990px) {
+  section.cardMovie {
+    width: auto;
+    margin: 12px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 862px) {
+  .cardMovie .titleMovie {
+    font-size: 20px;
+  }
+
+  .cardMovie .percentage {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .cardMovie .dateMovie {
+    font-size: 17px;
+  }
+
+  .cardMovie .divGenre {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .cardMovie .genre {
+    margin-top: 5px;
+  }
+}
