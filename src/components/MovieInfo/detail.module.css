@@ -128,6 +128,22 @@
   height: 100%;
 }
 
+.detailMovie .mobileDetail {
+  display: none;
+}
+
+.detailMovie .desktopDetail {
+  display: block;
+}
+
+.detailMovie .dateMovieMobile {
+  display: none;
+}
+
+.detailMovie .dateMovie {
+  display: block;
+}
+
 @media only screen and (max-width: 940px) {
   .detailMovie {
     margin-left: 20px;
@@ -163,5 +179,33 @@
 @media only screen and (max-width: 645px) {
   .detailMovie .percentage {
     right: -180px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .detailMovie .mobileDetail {
+    display: block;
+  }
+
+  .detailMovie .desktopDetail {
+    display: none;
+  }
+
+  .detailMovie .percentage {
+    right: 0px;
+  }
+
+  .detailMovie .dateMovieMobile {
+    display: block;
+    float: right;
+    margin: 15px;
+  }
+
+  .detailMovie .dateMovie {
+    display: none;
+  }
+
+  .detailMovie .titleLine {
+    margin-top: 30px;
   }
 }

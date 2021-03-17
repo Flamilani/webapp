@@ -11,13 +11,10 @@
   float: left;
   padding: 8px 16px;
   list-style: none;
+  cursor: pointer;
 }
 
-.pagination a {
-  text-decoration: none;
-}
-
-.pagination li.active a {
+.pagination li.active span {
   border: 4px solid #00e8e4;
   border-radius: 40px;
   background-color: #116193 !important;
@@ -26,4 +23,5 @@
   padding-bottom: 5px;
   color: #00e8e4;
   font-weight: bold;
+  cursor: pointer;
 }

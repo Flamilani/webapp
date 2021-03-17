@@ -9,7 +9,7 @@ const Pagination = (props) => {
 
     pageLinks.push(
       <li className={active} key={i} onClick={() => props.nextPage(i)}>
-        <a href="#">{i}</a>
+        <span>{i}</span>
       </li>
     );
   }

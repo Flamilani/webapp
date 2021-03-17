@@ -10,6 +10,20 @@ const MovieInfo = (props) => {
     <div>
       <nav></nav>
       <main className={css.detailMovie}>
+        <figure className={css.mobileDetail}>
+          {props.currentMovie.poster_path == null ? (
+            <img
+              src={noImage}
+              alt="Sem Imagem"
+              style={{ border: "2px solid #ccc" }}
+            />
+          ) : (
+            <img
+              src={`http://image.tmdb.org/t/p/w500/${props.currentMovie.poster_path}`}
+              alt={props.currentMovie.title}
+            />
+          )}
+        </figure>
         <header className={css.titleMovie}>
           {props.currentMovie.title}
           <div className={css.dateMovie}>
@@ -21,6 +35,12 @@ const MovieInfo = (props) => {
         </header>
         <section>
           <article>
+            <div className={css.dateMovieMobile}>
+              {" "}
+              {props.currentMovie.release_date === ""
+                ? "Sem data"
+                : moment(props.currentMovie.release_date).format("DD/MM/YYYY")}
+            </div>
             <div className={css.titleLine}>Sinopse</div>
             <hr />
             <p className={css.content}>{props.currentMovie.overview}</p>
@@ -60,7 +80,7 @@ const MovieInfo = (props) => {
             </div>
             <span className={css.percentage}>{halfstars.toFixed()}%</span>
           </article>
-          <figure>
+          <figure className={css.desktopDetail}>
             {props.currentMovie.poster_path == null ? (
               <img
                 src={noImage}

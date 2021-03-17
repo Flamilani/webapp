@@ -8,6 +8,10 @@ section.cardMovie {
   padding: 0px;
 }
 
+.movieCursor {
+  cursor: pointer;
+}
+
 .cardMovie article {
   width: 100%;
 }
@@ -70,6 +74,14 @@ section.cardMovie {
   margin-right: 5px;
 }
 
+.mobileCard {
+  display: none;
+}
+
+.desktopCard {
+  display: block;
+}
+
 @media only screen and (max-width: 990px) {
   section.cardMovie {
     width: auto;
@@ -100,5 +112,31 @@ section.cardMovie {
 
   .cardMovie .genre {
     margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .mobileCard {
+    display: block;
+  }
+
+  figure.mobileCard {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  figure.mobileCard img {
+    width: 93%;
+    margin: -5px;
+    margin-top: 15px;
+    margin-left: 12px;
+  }
+
+  .desktopCard {
+    display: none;
+  }
+
+  section.cardMovie {
+    margin-top: 0px;
+    padding-top: 0px;
   }
 }
