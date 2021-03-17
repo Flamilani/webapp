@@ -100,7 +100,7 @@ section.cardMovie {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
   .cardMovie .dateMovie {
     font-size: 17px;
   }
